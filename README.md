@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the annotated corpus used in the paper titled "[Fine-grained error analysis on English-to-Japanese machine translation in the medical domain.](https://aclanthology.org/2020.eamt-1.17/)", which was published in the European Association for Machine Translation (EAMT) journal. The corpus has been carefully annotated to identify five types of translation errors in machine-generated translations from English into Japanese.
+This repository contains the annotated corpus used in the paper titled "[Fine-grained error analysis on English-to-Japanese machine translation in the medical domain.](https://aclanthology.org/2020.eamt-1.17/)", which was published in the European Association for Machine Translation (EAMT) journal. The corpus has been carefully annotated to identify five types of translation errors in machine-generated translations from English into Japanese based on [Multidimensional Quality Metrics (MQM)](https://themqm.org/the-mqm-full-typology/).
 In the dataset, five types of translation errors are labeled at the token level:
 
 1. **Under-generation (ug)**: Missing translations (annotated on the source sentence).
@@ -26,10 +26,12 @@ The corpus is designed to support research in machine translation error analysis
 
 The dataset consists of token-level annotations for machine-translated sentences. Each token is labeled as either **O** (no error) or **E** (error), depending on whether it contains one of the five types of translation errors. The dataset is structured as follows:
 
-### Key Features:
+### Error Labelling:
+
+The error typology in the dataset is based on the MQM framework customized to better suit the evaluation of English-to-Japanese translations by NMT systems. While MQM has been widely used for translation quality assessment in European languages, our dataset extends its application to Japanese, a language with distinct grammatical and sociolinguistic features. We selected and adapted five error subtypes from MQM, focusing on key issues identified in NMT translations.
 
 - **Languages**: [Source language (e.g., Japanese)] and [Target language (e.g., English)]
-- **Annotation Types**:
+- **Error Types**:
   - **ug**: Under-generation (missing translations, annotated on the source sentence)
   - **og**: Over-generation (extra translations)
   - **mt**: Mis-translation (incorrect translations)
@@ -125,6 +127,8 @@ If you use this dataset in your research, please cite our paper:
   month={November}
 }
 ```
+## Reference
+Burchardt, Aljoscha. "Multidimensional quality metrics: a flexible system for assessing translation quality." Proceedings of Translating and the Computer 35. 2013.
 
 ## Contact
 
