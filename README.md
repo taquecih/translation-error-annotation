@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains the annotated corpus used in the paper titled "Fine-grained error analysis on English-to-Japanese machine translation in the medical domain.", which was published in the European Association for Machine Translation (EAMT) journal. The corpus has been carefully annotated to identify five types of translation errors in machine-generated translations from English into Japanese.
+This repository contains the annotated corpus used in the paper titled "[Fine-grained error analysis on English-to-Japanese machine translation in the medical domain.](https://aclanthology.org/2020.eamt-1.17/)", which was published in the European Association for Machine Translation (EAMT) journal. The corpus has been carefully annotated to identify five types of translation errors in machine-generated translations from English into Japanese.
 In the dataset, five types of translation errors are labeled at the token level:
 
 1. **Under-generation (ug)**: Missing translations (annotated on the source sentence).
