@@ -80,7 +80,6 @@ In addition to the labeled files, the `parallel_corpus` files contain only the s
 │   ├── parallel_corpus      # Source and target sentence pairs
 │   └── ...
 │
-├── LICENSE
 ├── README.md
 ```
 
