@@ -68,7 +68,7 @@ In addition to the labeled files, the `parallel_corpus` files contain only the s
 ## File Structure
 
 ```
-[repository-name]/
+translation-error-annotation/
 │
 ├── data/
 │   ├── lab_ug    # Under-generation annotations
@@ -77,8 +77,7 @@ In addition to the labeled files, the `parallel_corpus` files contain only the s
 │   ├── lab_se    # Syntax error annotations
 │   ├── lab_lc    # Lexical choice annotations
 │   ├── lab_all   # Annotations of all types of error
-│   ├── parallel_corpus      # Source and target sentence pairs
-│   └── ...
+│   └── parallel_corpus      # Source and target sentence pairs
 │
 ├── README.md
 ```
